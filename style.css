@@ -14,7 +14,6 @@ html {
     font-size:1.6rem;
     background: #e5e5e5;
     font-family: sans-serif;
-    line-height: 4vh;
     text-align: justify;
   }
 
@@ -102,6 +101,8 @@ html {
 
   main{
     margin-left:10%;
+    line-height: 4vh;
+    width: 80vw;
   }
  
   h1 {
@@ -141,7 +142,7 @@ html {
   
   input[type=checkbox]:checked ~ .toggle{
     left:7%;
-    top: 20%;
+    top: 22%;
     transition: 0.6s;
     position:fixed;
   }
@@ -158,6 +159,10 @@ html {
   font-size: xx-large;
   margin-bottom: 5vh;
 }
+  .credits{
+    font-size: small;
+  }
+
  .social-media{
     cursor: pointer;
     margin-left: 5vw;
@@ -186,6 +191,11 @@ html {
       margin: 3% 0 0 0%;
     }
   
+
+    main{
+      margin-left:15%;
+    }
+
     .wrapper{
       transform:translateX(-100%);
     }
