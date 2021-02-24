@@ -30,6 +30,12 @@ html {
     height: auto;
     width: 50vw;
   }
+
+  .vert-pic{
+    width: 25vw;
+    height: 50vw;
+  }
+
   .my-pic{
     height: auto;
     width: 20vw;
