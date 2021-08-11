@@ -177,11 +177,11 @@
 							<h2>Contact me</h2>
 							<p>Send me an email through this form and I will answer as soon as possible.</p>
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="https://EmailSendForm.almirpaulo.repl.co/">
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name"  required/>
+												<label for="name">Subject</label>
+												<input type="text" name="subject" id="name"  required/>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
@@ -189,11 +189,11 @@
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5" required></textarea>
+												<textarea name="text" id="message" rows="5" required></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><button class="button submit" onclick="sendEmail()">Send Message</button></li>
+											<li><button class="button submit" onclick="alert('Message sent!')">Send Message</button></li>
 										</ul>
 									</form>
 								</section>
@@ -216,27 +216,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://smtpjs.com/v3/smtp.js"></script>
-			<script>
-				function sendEmail(){
-					const txt = document.getElementById('message').value;
-					const name  = document.getElementById('name').value;
-					const email = document.getElementById('email').value;
-					Email.send({
-							SecureToken : "39c3d44a-032e-420d-a686-55fbe3583a51",
-							To : 'ap.freelas@gmail.com',
-							From : "ap.freelas@gmail.com",
-						Subject : `Do site: {name}<{email}>`,
-							Body : txt
-					}).then(
-						message => alert(message)
-					);
-
-
-
-				};
-			</script>
-							<!-- SecureToken : "39c3d44a-032e-420d-a686-55fbe3583a51", -->
 
 	</body>
 </html>
